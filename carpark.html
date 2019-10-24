@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        h1{
+            color: darkblue;
+            font-family: "Engravers MT";
+            text-align:center;
+        }
+        h3{
+            color: black;
+            text-align: center;
+            font-family: "Century Gothic";
+            font-size: 18pt;
+        }
+        hr{
+            border: ridge silver;
+            width: 75%;
+        }
+        a{
+            background-color: gainsboro;
+            color: navy;
+            padding: 1%;
+            text-decoration: blink;
+            text-align: center;
+        }
+        body{
+            background-color: cadetblue;
+        }
+
+
+        div{
+            word-spacing: 5px;
+            text-decoration: solid;
+            text-align: center;
+        }
+        form{
+            background-color: transparent;
+            font-family: "Baskerville Old Face";
+            text-align: center;
+            font-size: 16pt;
+        }
+
+    </style>
+
+</head>
+       <h1> CAR PARKING MANAGEMENT SYSTEM </h1>
+       <h3> WE MANAGE YOUR PARKING SPACE!! </h3>
+       <hr>
+<br><br>
+<div>
+    <a href="">HOME</a>
+    <a href="">TIME IN</a>
+    <a href="">TIME OUT</a>
+    <a href="">LOST AND FOUND</a>
+    <a href="">ADMIN</a>
+    <br><br>
+
+    <img src="../static/lambo.jpg" alt=""width="800" height="300">
+    <br>
+    {{ msg }}
+</div>
+
+<form action="/carpark" method="post">
+    <input type="text" name="fname" placeholder="first name">
+    <br><br>
+    <input type="text" name="lname" placeholder="last name">
+    <br><br>
+    <input type="email" name="email" placeholder="Email Address">
+    <br><br>
+    <input type="text" name="plate" placeholder="Number Plate">
+    <br><br>
+    <input type="tel"name="mobile" placeholder="Phone Number">
+    <br><br>
+    <input type="text" name="timein" placeholder="Time in">
+    <br><br>
+    <input type="submit" value="SUBMIT">
+    <input type="reset">
+
+
+</form>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+     <head>
+         <style type="text/css">
+             h1{
+                 color: forestgreen;
+                 font-family: Elephant;
+                 text-align: center;
+             }
+             h3{
+                 color: black;
+                 text-align: center;
+             }
+             hr{
+                 border: ridge forestgreen;
+                 width: 60%;
+             }
+             a{
+                 background-color: forestgreen;
+                 color: whitesmoke;
+                 padding: 1%;
+                 text-decoration: none ;
+                 text-decoration-color: forestgreen;
+             }
+             i
+             {
+                 color: red;
+             }
+             body{
+                 background-color: aliceblue;
+             }
+
+             div{
+                 padding: 1.5%;
+                 text-align: center;
+                 margin-right: 50px;
+             }
+            form{
+                text-align: center;
+                background-color: transparent;
+            }
+             b{
+                 color: deepskyblue;
+                text-align: center;
+
+             }
+
+
+
+         </style>
+
+
+           </head>
+         <h1>GUEST BOOK APPLICATION</h1>
+         <h3> Book Now! Limited Spaces!</h3>
+         <hr>
+
+
+
+         <div>
+
+             <a href="/home">HOME</a>
+             <a href="/checkin">CHECK IN</a>
+             <a href="/checkout">CHECK OUT</a>
+             <a href="">ADMIN</a>
+             <a href="/search">SEARCH</a>
+             <a href="/delete">REMOVE</a>
+             <a href="/logout">LOGOUT</a>
+                  <br><br>
+
+
+              <img src="../static/the-10-best-hotels-in-the-world.jpg" alt=""width="1000" height="400">
+             <br>
+               <b>{{ msg9 }}</b>
+             {% for item in results %}
+                 User: <i> {{ item[0] }}</i>
+                 Role:  <i> {{ item[2] }}</i>
+             {% endfor %}
+         {{ msg }}
+   {{ msg2 }}
+</div>
+         <form action="/checkin" method="POST">
+             <input type="text" name="fname" placeholder="First Name">
+             <br> <i>{{ msg1 }}</i><br>
+             <input type="text" name="lname" placeholder="Last Name">
+             <br><i>{{ msg2 }}</i><br>
+             <input type="email" name="email" placeholder="Email Address">
+             <br><i>{{ msg3 }}</i><br>
+             <input type="number" name="room" placeholder="Allocated Room">
+             <br><i>{{ msg4 }}</i><br>
+             <input type="tel" name="mobile" placeholder="Phone Number">
+             <br><i>{{ msg5 }}</i><br>
+             <input type="text" name="timein" placeholder="Time In">
+             <br><i>{{ msg6 }}</i><br>
+             <input type="submit" value="BOOK">
+             <input type="reset">
+
+         </form>
+
+
+
+
+
+   <body>
+
+
+
+   </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

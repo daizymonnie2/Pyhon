@@ -1,0 +1,85 @@
+<html>
+
+     <head>
+         <link rel="stylesheet" href="../static/css/bootstrap.css">
+         <style type="text/css">
+
+             h3{
+                 color: black;
+                 text-align: center;
+             }
+             hr{
+                 border: ridge forestgreen;
+                 width: 60%;
+             }
+             a{
+                 background-color: forestgreen;
+                 color: whitesmoke;
+                 padding: 1%;
+                 text-decoration: none ;
+                 text-decoration-color: forestgreen;
+             }
+             i
+             {
+                 color: red;
+             }
+             body{
+                 background-color: aliceblue;
+             }
+
+
+
+         </style>
+
+
+           </head>
+      <body>
+      <h1 class="jumbotron text-center ">GUEST BOOK APPLICATION</h1>
+
+         <hr>
+         <br>
+<section class="row container-fluid">
+             <div class="col-md-8">
+
+                 <img src="../static/the-10-best-hotels-in-the-world.jpg" alt=""width="800" height="500">
+
+             </div>
+
+  <div class="col-md-4">
+
+      <b><h1 class="jumbotron text-center">LOGIN SYSTEM</h1></b> <br>
+
+<i> {{ msg1 }}</i>
+
+        <form action="/" method="POST">
+             <input class="form-control" type="text" name="username" placeholder="Enter Your UserName">
+             <br><br>
+
+             <input class="form-control" type="password" name="password" placeholder="Enter Your Password">
+             <br><br>
+             <input class="btn btn-success" type="submit" value="LOGIN">
+             <input class="btn btn-success" type="reset">
+
+         </form>
+         <a href="/register">Don't Have an Account?</a>
+         <br><br>
+         <a href="/Forgot Password">Forgot Password?</a>
+    </div>
+
+
+
+</section>
+
+   </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

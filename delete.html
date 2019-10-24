@@ -1,0 +1,114 @@
+<html>
+     <head>
+         <style type="text/css">
+             h1{
+                 color: forestgreen;
+                 font-family: Elephant;
+                 text-align: center;
+             }
+             h3{
+                 color: black;
+                 text-align: center;
+             }
+             hr{
+                 border: ridge forestgreen;
+                 width: 60%;
+             }
+             a{
+                 background-color: forestgreen;
+                 color: whitesmoke;
+                 padding: 1%;
+                 text-decoration: none ;
+                 text-decoration-color: forestgreen;
+             }
+             i
+             {
+                 color: red;
+             }
+             body{
+                 background-color: aliceblue;
+             }
+
+             div{
+                 padding: 1.5%;
+                 text-align: center;
+             }
+            form{
+                border: outset transparent;
+                text-align: center;
+                background-color: transparent;
+            }
+             h2{
+                 text-align:center;
+                 color: forestgreen;
+                 text-decoration: underline;
+             }
+             table{
+                 margin: auto;
+                 color: black;
+
+             }
+             b{
+                 color: red;
+                 margin-right: auto;
+             }
+
+
+
+         </style>
+
+
+           </head>
+         <h1>GUEST BOOK APPLICATION</h1>
+         <h3> Book Now! Limited Spaces!</h3>
+         <hr>
+
+         <div>
+             <a href="/home">HOME</a>
+             <a href="/checkin">CHECK IN</a>
+             <a href="/checkout">CHECK OUT</a>
+             <a href="">ADMIN</a>
+             <a href="/search">SEARCH</a>
+             <a href="/delete">REMOVE</a>
+             <a href="">UPDATE</a>
+                  <br><br>
+
+
+              <img src="../static/article-2585986-1C78AB2F00000578-312_964x635.jpg" alt=""width="1000" height="400">
+</div>
+{{ msg }}
+
+            <form action="/delete" method="POST">
+         <br><br>
+
+     <input type="tel" name="mobile"
+                placeholder="Enter Your Mobile No,">
+     <br><br>
+      <span id="msg3"> {{ msg3 }} </span>
+       <br>
+
+       {{ error}}
+
+
+
+     <input type="submit"
+                value=" DELETE CLIENT">
+
+
+   <body>
+
+
+
+   </body>
+
+
+
+
+
+
+
+</form>
+
+
+
+</html>

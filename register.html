@@ -1,0 +1,96 @@
+<html>
+     <head>
+         <style type="text/css">
+             h1{
+                 color: forestgreen;
+                 font-family: Elephant;
+                 text-align: center;
+             }
+             h3{
+                 color: black;
+                 text-align: center;
+             }
+             hr{
+                 border: ridge forestgreen;
+                 width: 60%;
+             }
+             a{
+                 background-color: forestgreen;
+                 color: whitesmoke;
+                 padding: 1%;
+                 text-decoration: none ;
+                 text-decoration-color: forestgreen;
+             }
+             i
+             {
+                 color: red;
+             }
+             body{
+                 background-color: aliceblue;
+             }
+
+             div{
+                 padding: 1.5%;
+                 text-align: center;
+                 margin-right: 50px;
+             }
+            form{
+                text-align: center;
+                background-color: transparent;
+            }
+             b{
+                 color: deepskyblue;
+                text-align: center;
+
+             }
+
+
+
+         </style>
+
+
+           </head>
+         <h1>GUEST BOOK APPLICATION</h1>
+         <h3> Book Now! Limited Spaces!</h3>
+         <hr>
+
+              <img src="../static/the-10-best-hotels-in-the-world.jpg" alt=""width="1000" height="400">
+             <br>
+              <h1>REGISTRATION SYSTEM</h1>
+</div>
+         <form action="/register" method="POST">
+             <input type="text" name="username" placeholder="Enter your Username">
+             <br> <i>{{ msg7 }}</i><br>
+             <input type="password" name="password" placeholder="Enter your Password">
+             <br><i>{{ msg8 }}</i><br>
+             <input type="text" name="level" placeholder="Enter your Role">
+             <br><i>{{ msg9 }}</i><br>
+
+             <input type="submit" value="REGISTER">
+             <input type="reset">
+
+         </form>
+
+
+
+
+         <a href="/">LOGIN</a>
+         <br><br>
+
+   <body>
+
+
+
+   </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

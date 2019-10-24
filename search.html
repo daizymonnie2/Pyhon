@@ -1,0 +1,142 @@
+<html>
+     <head>
+          <link rel="stylesheet" href="../static/css/bootstrap.css">
+
+         <style type="text/css">
+
+             h3{
+                 color: black;
+                 text-align: center;
+             }
+             hr{
+                 border: ridge forestgreen;
+                 width: 60%;
+             }
+             a{
+                 background-color: forestgreen;
+                 color: whitesmoke;
+                 padding: 1%;
+                 text-decoration: none ;
+                 text-decoration-color: forestgreen;
+             }
+             i
+             {
+                 color: red;
+             }
+             body{
+                 background-color: aliceblue;
+             }
+
+             div{
+                 padding: 1.5%;
+                 text-align: center;
+             }
+            form{
+                border: outset transparent;
+                text-align: center;
+                background-color: transparent;
+            }
+             h2{
+                 text-align:center;
+                 color: forestgreen;
+                 text-decoration: underline;
+             }
+             table{
+                 margin: auto;
+                 color: black;
+
+             }
+             b{
+                 color: red;
+                 margin-right: auto;
+             }
+
+
+
+         </style>
+
+
+           </head>
+         <h1 class="jumbotron text-center">GUEST BOOK APPLICATION</h1>
+         <h3> Book Now! Limited Spaces!</h3>
+         <hr>
+
+         <div>
+             <a href="/home">HOME</a>
+             <a href="/checkin">CHECK IN</a>
+             <a href="/checkout">CHECK OUT</a>
+             <a href="">ADMIN</a>
+             <a href="/search">SEARCH</a>
+             <a href="/delete">REMOVE</a>
+             <a href="/logout">LOGOUT</a>
+                  <br><br>
+
+
+              <img src="../static/article-2585986-1C78AB2F00000578-312_964x635.jpg" alt=""width="1000" height="400">
+</div>
+
+{{ msg }}
+     <section>
+     <div class="row col-md-5">
+
+
+         <form action="/search" method="POST">
+             <br>
+
+             <input type="tel" name="mobile" placeholder="Phone Number">
+
+             <br><i>{{ msg5 }}</i><br>
+
+             <input class="btn btn-success" type="submit" value="SEARCH CLIENT">
+             <input class="btn btn-success" type="reset">
+
+         </form>
+     </div>
+     <b>{{ error }}</b>
+<div class="col-md-7">
+     <h2 class="text-left"> Results:</h2>
+
+        <table class="table" border="1" width="80%">
+         {% for item in results %}
+
+             <tr>
+                 <td>{{ item[0] }}</td>
+                 <td>{{ item[1] }}</td>
+                 <td>{{ item[2] }}</td>
+                 <td>{{ item[3] }}</td>
+                 <td>{{ item[4] }}</td>
+                 <td>{{ item[5] }}</td>
+
+
+             </tr>
+
+
+         {% endfor %}
+
+
+
+        </table>
+</div>
+
+
+
+     </section>
+
+
+   <body>
+
+
+
+   </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
